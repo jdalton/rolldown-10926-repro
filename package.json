@@ -1,0 +1,11 @@
+{
+  "name": "rolldown-10926-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node repro.mjs"
+  },
+  "dependencies": {
+    "rolldown": "1.2.9"
+  }
+}
