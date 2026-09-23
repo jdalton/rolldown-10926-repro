@@ -1,0 +1,17 @@
+name: repro
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  darwin-x64:
+    runs-on: macos-13
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26.5.0
+      - run: npm install
+      - run: npm run repro
